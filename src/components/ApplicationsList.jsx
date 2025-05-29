@@ -35,7 +35,6 @@ function ApplicationList(props) {
             try {
                 const response = await axios.get(apiUrl + "/applications");
                 setApplications(response.data);
-                console.log(response.data); // Handle the API data
             } catch (error) {
                 console.error('Error fetching data:', error); // Handle errors
             }
@@ -44,7 +43,6 @@ function ApplicationList(props) {
             try {
                 const response = await axios.get(apiUrl + "/statuses");
                 setStatuses(response.data);
-                console.log(response.data); // Handle the API data
             } catch (error) {
                 console.error('Error fetching data:', error); // Handle errors
             }
